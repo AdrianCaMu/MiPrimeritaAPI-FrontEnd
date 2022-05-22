@@ -15,29 +15,34 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></head>
     <body>
         <div class="jumbotron">
-            <h1>Login</h1>
+            <h1>Update Alumno</h1>
         </div>
             <div class="container-sm">
                 <div class="d-flex justify-content-center">
                 <div class="col-8">
                     <div class="form-group">
-                    <label for="username">User Name:</label>
-                    <input type="text" class="form-control" placeholder="username" id="username" required>
+                        <label for="userName">Nuevo Nombre Alumno:</label>
+                        <input type="text" class="form-control" placeholder="Name" id="name" required>
                     </div>
                     <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" placeholder="Password" id="pwd" required>
+                    <div class="form-group">
+                    <label for="pwd">DNI Alumno:</label>
+                    <input type="text" class="form-control" placeholder="00000000X" id="dni" required>
                     </div>
-                    <button type="button" class="btn btn-primary" id="btn-login">Login</button>
+                    <div class="form-group">
+                        <label for="password">PIN Alumno:</label>
+                        <input type="password" class="form-control" placeholder="PIN" id="pin" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btn-update">Update</button>
                     <div class="alert alert-danger alert-dismissible" style="display:none;" id="error">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        <strong>ERROR!</strong> Login incorrecto.
+                        <strong>ERROR!</strong> Update incorrecto.
                     </div><br/><br/>
-                    <p class ="d-flex flex-row justify-content-center alig-items-center"><label for="register">¿No tienes cuenta?</label><br/></p>
-                    <p class ="d-flex flex-row justify-content-center alig-items-center"><button type="button" class="btn btn-primary" id="btn-register">Register</button></p>
+                        <p class ="d-flex flex-row justify-content-center alig-items-center"><label for="welcome">Volver</label></p>
+                        <p class ="d-flex flex-row justify-content-center alig-items-center"><button type="button" class="btn btn-primary" id="btn-volver">Home</button></p>
                 </div>
             </div>
             </div>
-        <script src="../js/login.js"></script>
+        <script src="../js/update.js"></script>
     </body>
 </html>
