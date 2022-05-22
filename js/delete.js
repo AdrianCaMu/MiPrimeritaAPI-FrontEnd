@@ -6,7 +6,7 @@ $(document).ready(function(){
 
         if( DNI != "" ){
             $.ajax({
-                url:'https://localhost:44367/Alumno',
+                url:'https://localhost:44367/Alumno?DNI='+DNI,
                 type:'delete',
                 data:JSON.stringify({dni:DNI}),
                 contentType:"application/json; charset=utf-8",
